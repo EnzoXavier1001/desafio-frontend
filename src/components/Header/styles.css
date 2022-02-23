@@ -1,0 +1,72 @@
+.header {
+    padding: 1.5rem 0;
+    background: #F4F4F4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    max-width: 112rem;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    background: #FFFFFF url('../../img/arrow_icon.png') 95.5% 50% no-repeat;;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 0.4rem;
+    padding: 2rem 8rem 1.2rem 1rem;
+    color: #656363;
+    font-weight:bold;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    height: 48px;
+}
+
+.header-bag {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.input-search {
+    padding: 1.2rem;
+    width: 35.4rem;
+    outline: none;
+    border: 0.1rem solid #ED3237;
+    border-radius: 0.4rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 1.2rem;
+    color: #ED3237;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.teste {
+    position: relative;
+}
+
+.label_delivery {
+    position: absolute;
+    top: 0;
+    left: 9px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: #ED3237;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
