@@ -1,0 +1,45 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 1px solid orange;
+    outline: none;
+    padding-bottom: 1.6rem;
+    color: var(--clr-orange);
+    font-size: 1.4rem;
+}
+
+.form-group__amount {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.form-group__amount div {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--clr-orange);
+    font-size: 1.4rem;
+}
+
+.button-amount {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: var(--clr-red);
+    background: transparent;
+    border: none;
+    font-size: 2.4rem;
+}
+
+.form-group__product-name {
+    font-size: 1.4rem;
+    color: var(--clr-gray);
+    font-weight: 500;
+}
+

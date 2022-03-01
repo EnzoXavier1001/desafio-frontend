@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --clr-red: #D80000;
+    --clr-gray: #4E4E4E;
+    --clr-orange: #F09035;
+    --clr-yellow-light: #FDD70E;
+}
+
 html {
     font-size: 62.5%;
 }
 
-body {
+body, input, button {
     font-family: 'Roboto',sans-serif;
 }

@@ -1,0 +1,74 @@
+.main-form {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.form-header {
+    background: rgba(253, 215, 14, 0.2);
+    padding: 1rem 2rem;
+    margin-bottom:  0.8rem;
+}
+
+.form-header h2 {
+    color: var(--clr-gray);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.form-header p {
+    color: var(--clr-orange);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.8rem;
+}
+
+.form-container {
+    margin-top: 1.6rem;
+}
+
+.form-footer {
+    display: flex;
+    padding: 2rem;
+}
+
+.form-footer__add {
+    flex: 1;
+    background-color: var(--clr-orange);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 1.6rem;
+    transition: filter 0.6s ease;
+}
+
+.form-footer__add:hover {
+    filter: brightness(0.8);
+}
+
+.form-cutlery__mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.4rem;
+    padding: 0 1.5rem;
+}
+
+.cutlery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cutlery label {
+    font-size: 1.4rem;
+    color: var(--clr-gray);
+}
+
+@media (max-width: 720px) {
+    .form-cutlery__mobile {
+        display: flex;
+    }
+}

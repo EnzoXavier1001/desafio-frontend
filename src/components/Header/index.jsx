@@ -6,14 +6,14 @@ import { BsCart3 } from "react-icons/bs";
 export const Header = () => {
     return (
         <header className="header">
-            <div className="container">
+            <div className="header-container">
                 <div className="header-logo">
                     <img src={logoImg} alt="Logo" />
                 </div>
                 <div className="header-bag">
-                    <div className='teste'>
-                        <label className='label_delivery' htmlFor="">Entrega:</label>
-                        <select className='delivery'>
+                    <div className='header-content'>
+                        <label className='content-label__delivery' htmlFor="">Entrega:</label>
+                        <select className='content-select__delivery'>
                             <option value="address">R. Antonio Bueno, 222</option>
                         </select>
                     </div>
@@ -29,7 +29,7 @@ export const Header = () => {
                         <span>Entrar</span>
                     </button>
 
-                    <button className='icons'>
+                    <button className='icons --cart'>
                         <BsCart3 size={25} color={'#ED3237'}/>
                         <span>Carrinho</span>
                     </button>
