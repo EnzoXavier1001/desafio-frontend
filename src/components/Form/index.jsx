@@ -13,7 +13,6 @@ export const Form = () => {
     const [cheddarSauce, setCheddarSauce] = useState(0)
     const [picanhaSauce, setPicanhaSauce] = useState(0)
     const [cutlery, setCutlery] = useState(0)
-    const [isChecked, setIsChecked] = useState(false)
 
     function handleAddEvent() {
         setShowModal(true)
@@ -65,17 +64,16 @@ export const Form = () => {
                 <div className='form-cutlery__mobile'>
                     <div className='cutlery'>
                         <label>Sim</label>
-                        <input onChange={() => setIsChecked(true)} name='cutlery' type="radio" />
+                        <input  name='cutlery' type="radio" />
                     </div>
                     <div className='cutlery'>
                         <label>Não</label>
-                        <input onChange={() => setIsChecked(false)} name='cutlery' type="radio" />
+                        <input  name='cutlery' type="radio" />
                     </div>
                 </div>
 
                 <div className="form-footer">
                     <div className='form-group__amount'>
-                        {isChecked && (
                             <div>
                                 <button 
                                     disabled={cutlery === 0 ? true : false} 
@@ -87,8 +85,6 @@ export const Form = () => {
                                 <p>{cutlery}</p>
                                 <button onClick={() => setCutlery(cutlery + 1)} className='button-amount --add'><MdAdd  /></button>
                             </div>
-                        )}
-
                     </div>
                     <button onClick={handleAddEvent} className='form-footer__add'>Adicionar</button>
                 </div>
